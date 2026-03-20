@@ -1,17 +1,6 @@
 package com.ares.safety.NEW
 
 
-data class Punto2D(val x: Double = 0.0, val y: Double = 0.0)
-data class RegistroTexto(val id: Int, val titulo: String, val contenido: String)
-data class ParEnteros(val a: Int, val b: Int)
-data class Medida(val ancho: Double, val alto: Double)
-data class ResumenNumerico(
-    val suma: Int,
-    val promedio: Double,
-    val minimo: Int,
-    val maximo: Int
-)
-
 sealed class ResultadoInerte {
     data class Exito(val mensaje: String) : ResultadoInerte()
     data class Error(val razon: String) : ResultadoInerte()
