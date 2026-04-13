@@ -7,6 +7,8 @@ object ArchivoInerte {
     const val VERSION = 1
     const val DESCRIPCION = "Código aislado y sin efectos secundarios"
 
+    fun esJot(n: Int) = n % 2 == 0
+
     fun esPar(n: Int) = n % 2 == 0
 
     fun esImpar(n: Int) = n % 2 != 0
